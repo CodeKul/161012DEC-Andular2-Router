@@ -8,10 +8,12 @@
 
   <div class="row">
     <div class="col-md-6">
-      <a [routerLink]="['/user',100]">User</a>
+      <a [routerLink]="[{outlets :{ 'my' : ['user',100,0]}}]" routerLinkActive="active">User</a>
+
+      <!--<a [routerLink]="['/user',100,0]">User</a>-->
     </div>
     <div class="col-md-6">
-      <a [routerLink]="['/guest']" [queryParams]="{cost: 896}">Guest</a>
+      <a [routerLink]="[{outlets :{ 'my' : ['guest']}}]" [queryParams]="{cost: 896}" [routerLinkActive]="['active']">Guest</a>
     </div>
   </div>
 </div>

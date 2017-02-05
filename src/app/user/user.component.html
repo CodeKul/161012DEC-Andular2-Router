@@ -5,7 +5,7 @@
       <hr>
     </div>
     <div class="col-md-2">
-      <a class="btn btn-primary" routerLink="../">Back</a>
+      <a class="btn btn-primary" [routerLink]="['']">Back</a>
     </div>
   </div>
 
@@ -14,7 +14,7 @@
       <input type="text" [(ngModel)]="userId">
     </div>
     <div class="col-md-2">
-      <a [routerLink] ="['/user', userId, 0]">User</a>
+      <a [routerLink]="['/user', userId, 0]">User</a>
     </div>
   </div>
 
@@ -23,10 +23,15 @@
       <input class="btn btn-primary" type="button" value="Guest" (click)="goToGuest()">
     </div>
   </div>
-</div>
-
-<div class="row">
+  <div class="row">
     <div class="col-md-12">
       <a href="http://google.com" #google>User</a>
     </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
 </div>

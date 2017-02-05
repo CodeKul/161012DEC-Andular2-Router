@@ -8,13 +8,17 @@ import { AppComponent } from './app.component';
 import { UserComponent } from './user/user.component';
 import { WallComponent } from './wall/wall.component';
 import { GuestComponent } from './guest/guest.component';
+import { ProfileComponent } from './user/profile.component';
+import { OffsComponent } from './user/offs.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserComponent,
     WallComponent,
-    GuestComponent
+    GuestComponent,
+    ProfileComponent,
+    OffsComponent
   ],
   imports: [
     BrowserModule,
