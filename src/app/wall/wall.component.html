@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1>Angular2 Routers</h1>
+      <hr>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6">
+      <a [routerLink]="['/user',100]">User</a>
+    </div>
+    <div class="col-md-6">
+      <a [routerLink]="['/guest']" [queryParams]="{cost: 896}">Guest</a>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-10">
+      <h1>User {{myId}} - {{myId1}} </h1>
+      <hr>
+    </div>
+    <div class="col-md-2">
+      <a class="btn btn-primary" routerLink="../">Back</a>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-10">
+      <input type="text" [(ngModel)]="userId">
+    </div>
+    <div class="col-md-2">
+      <a [routerLink] ="['/user', userId, 0]">User</a>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <input class="btn btn-primary" type="button" value="Guest" (click)="goToGuest()">
+    </div>
+  </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+      <a href="http://google.com" #google>User</a>
+    </div>
+</div>
