@@ -10,7 +10,8 @@ const APP_ROUTES : Routes = [
     {path :'user/:id/:id1', component : UserComponent, outlet:'my' },
     {path :'user/:id/:id1', component : UserComponent, children : USER_ROUTES},
     {path :'guest', component : GuestComponent, outlet: 'my'},
-    {path :'google', redirectTo:'https://angular-2-training-book.rangle.io/handout/routing/config.html'}
+    {path :'google', redirectTo:'https://angular-2-training-book.rangle.io/handout/routing/config.html'},
+    {path :'user', redirectTo :'/user/100/10/profile',pathMatch:'full'}
 ];
 
 export const MyRoutes = RouterModule.forRoot(APP_ROUTES)
