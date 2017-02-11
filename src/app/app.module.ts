@@ -1,3 +1,4 @@
+import { ProtectionGuardService } from './protection-guard.service';
 import { MyRoutes } from './app.router';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -26,7 +27,7 @@ import { OffsComponent } from './user/offs.component';
     HttpModule,
     MyRoutes
   ],
-  providers: [],
+  providers: [ProtectionGuardService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
